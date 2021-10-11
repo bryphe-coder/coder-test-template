@@ -1,0 +1,17 @@
+version: 0.2
+workspace:
+  type: "kubernetes"
+  specs:
+    kubernetes:
+      # Image should already be registered in your coder's organization.
+      # Use the image's repo name.
+      image:
+        value: ubuntu:latest
+      container-based-vm:
+        value: false
+      cpu:
+        value: 2
+      memory:
+        value: 2
+      disk:
+        value: 10
